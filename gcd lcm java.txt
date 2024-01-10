@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the first number: ");
+        int n1 = input.nextInt();
+        System.out.println("Enter the second number: ");
+        int n2 = input.nextInt();
+        int x = n1;
+        int y = n2;
+        while (n2 != 0) {
+            int t = n2;
+            n2 = n1 % n2;
+            n1 = t;
+        }
+        int gcd = n1;
+        System.out.printf("GCD of %d and %d = %d\n", x, y, gcd);
+        int lcm = (x * y) / gcd;
+        System.out.printf("LCM of %d and %d = %d\n", x, y, lcm);
+        input.close();
+    }
+}

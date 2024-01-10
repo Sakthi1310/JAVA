@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 50; i++) {
+            for (int j = i + 1; j <= 50; j++) {
+                int x = i;
+                int y = j;
+                int a = x;
+                int b = y;
+                while (b != 0) {
+                    int t = b;
+                    b = a % b;
+                    a = t;
+                }
+                int gcd = a;
+                int lcm = (x * y) / gcd;
+                System.out.printf("GCD of %d and %d = %d\n", x, y, gcd);
+                System.out.printf("LCM of %d and %d = %d\n", x, y, lcm);
+            }
+        }
+    }
+}
