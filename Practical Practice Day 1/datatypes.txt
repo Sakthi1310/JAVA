@@ -1,0 +1,40 @@
+public class Main {
+    public static void main(String[] args) {
+        // Integer data types
+        byte byteVar = 10;
+        short shortVar = 100;
+        int intVar = 1000;
+        long longVar = 100000L; 
+
+
+        float floatVar = 10.5f; 
+        double doubleVar = 10.1234;
+
+
+        char charVar = 'A';
+
+     
+        boolean boolVar = true;
+
+       
+        System.out.println("byteVar: " + byteVar);
+        System.out.println("shortVar: " + shortVar);
+        System.out.println("intVar: " + intVar);
+        System.out.println("longVar: " + longVar);
+        System.out.println("floatVar: " + floatVar);
+        System.out.println("doubleVar: " + doubleVar);
+        System.out.println("charVar: " + charVar);
+        System.out.println("boolVar: " + boolVar);
+    }
+}
+
+Program Output
+
+byteVar: 10
+shortVar: 100
+intVar: 1000
+longVar: 100000
+floatVar: 10.5
+doubleVar: 10.1234
+charVar: A
+boolVar: true
