@@ -22,9 +22,9 @@ public class Inventory {
     return itemsByCategory.get(category);
   }
 
-  // ... (other methods to manage inventory)
+ 
 }
 
 class Item {
-  // ... (item properties)
+
 }
